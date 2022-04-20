@@ -1,0 +1,15 @@
+.contenthome {
+  display: flex;
+
+
+  .contenthome__text, .contenthome__img {
+    flex: 1;
+  }
+  .contenthome__img {
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+}
