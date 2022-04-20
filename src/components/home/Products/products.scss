@@ -1,0 +1,21 @@
+.products {
+  height: 70vh;
+  display: flex;
+
+  .products__text {
+    flex:1.5;
+    position: relative;
+    .products__description {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 50%;
+    }
+  }
+  .products__products {
+    flex: 2;
+    display: flex;
+  }
+}

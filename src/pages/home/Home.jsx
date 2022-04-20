@@ -1,7 +1,7 @@
 import React from 'react'
-import ContentHome from '../../components/contentHome/ContentHome'
-import Header from '../../components/header/Header'
-import PresentationHome from '../../components/presentationHome/PresentationHome'
+import ContentHome from '../../components/home/contentHome/ContentHome'
+import Header from '../../components/home/header/Header'
+import Products from '../../components/home/Products/Products'
 import './home.scss'
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Header />
       <ContentHome />
-      <PresentationHome />
+      <Products />
     </div>
   )
 }

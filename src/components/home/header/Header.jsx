@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.scss'
-import logo from '../../images/logo-gold.svg'
+import logo from '../../../images/logo-gold.svg'
 import { FiShoppingCart } from 'react-icons/fi';
 
 
