@@ -1,0 +1,69 @@
+.reviews {
+  height: 180vh;
+
+
+  .review-claire, .review-emma {
+    height: 90vh;
+    display: flex;
+    .review__stars {
+      font-size: 1.2rem;
+    }
+    .review__text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .review__comment {
+      margin: 20px 0;
+      font-size: 1.7rem;
+      font-style: italic;
+    }
+    .review__name {
+      color: #6C7075;
+      font-family: 'Roboto',
+        sans-serif;
+    }
+  }
+
+  .review-claire {
+    .review-claire__img {
+      flex: 1;
+      position: relative;
+      img {
+        height: 80vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+    .review-claire__text {
+      flex: 1;
+      position: relative;
+    }
+  }
+  .review-emma {
+    flex-direction: row-reverse;
+    .review-emma__img {
+      flex: 1;
+      position: relative;
+      img {
+        height: 60vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+    .review-emma__text {
+      padding: 100px;
+      flex: 1;
+      position: relative;
+    }
+  }
+}

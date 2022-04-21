@@ -1,0 +1,30 @@
+.product {
+  img {
+    height: 600px;
+  }
+
+  .product__description {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    .product__number, .product__containing {
+      font-family: 'Roboto',
+      sans-serif;
+      margin-right: 5px;
+      font-size: 0.8rem;
+      color: #BDBFC1;
+      font-weight: bold;
+    }
+    .product__name {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-top: 5px;
+    }
+    .product__price {
+      font-style: italic;
+      margin-top: 5px;
+    }
+  }
+}

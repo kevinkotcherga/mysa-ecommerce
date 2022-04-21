@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 .content-home {
   display: flex;
   height: 90vh;
@@ -13,6 +11,15 @@
       width: 100%;
       height:100%;
       object-fit: cover;
+      position: relative;
+    }
+    .content-home__img-description {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      color: #ffffff;
+      font-family: 'Roboto',
+      sans-serif;
     }
   }
   .content-home__text {
@@ -25,14 +32,14 @@
       transform: translate(-50%, -50%);
       width: 50%;
       color: #ffffff;
-      .content-home__mysa {
+      .content-home__text-mysa {
         font-family: 'Roboto',
         sans-serif;
         font-size: 0.8rem;
         margin-bottom: 15px;
         font-weight: bold;
       }
-      .content-home__description {
+      .content-home__text-description {
         font-size: 2.2rem;
         margin-bottom: 50px;
         font-style: italic;
