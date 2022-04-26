@@ -7,9 +7,22 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setProductsData } from "../../../redux-toolkits/feature/productsSlice";
 
 const Products = () => {
-  const productsData = useSelector((state) => state.products.products);
+  const productsData = useSelector((state: RootState) => state.products.products);
   console.log(productsData);
   const dispatch = useDispatch();
+
+  interface RootState {
+    products: any
+  }
+
+  type productInfo = {
+    name:string,
+    img:string,
+    containing: number,
+    scents:string,
+    price:number,
+    id:number
+  }
 
   useEffect(() => {
 		axios
@@ -27,11 +40,9 @@ const Products = () => {
         </div>
       </div>
       <ScrollContainer className="scroll-container products__products-list">
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+         {productsData.map(({name, img, containing, scents, price, id}:productInfo) => (
+          <Product key={id} img={img} name={name} containing={containing} scents={scents} price={price} />
+        ))}
       </ScrollContainer>
     </div>
   )

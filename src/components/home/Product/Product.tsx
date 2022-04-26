@@ -1,19 +1,19 @@
 import React from 'react'
 import './product.scss'
 
-const Product = () => {
+const Product = ({img, name, containing, scents, price }) => {
   return (
     <div className='product'>
       <div className='product__container-img'>
-        <img src="https://mysa-skincare.com/uploads/transforms/bc9e33244d2d8a7bebbefa89bb319b9f/496/Cuticle-Oil_2020-10-15-085737_d3867277feb154defec9b24a5714fadb.webp" alt="" />
+        <img src={img} alt="" />
       </div>
       <div className='product__description'>
         <div className='product__description-top'>
-          <span className='product__scents'>3 PRODUITS |</span>
-          <span className='product__containing'>15 ML</span>
+          <span className='product__scents'>{scents} |</span>
+          <span className='product__containing'>{containing} ML</span>
         </div>
-        <span className='product__name'>Cucicle Oil</span>
-        <span className='product__price'>6€</span>
+        <span className='product__name'>{name}</span>
+        <span className='product__price'>{price}€</span>
       </div>
     </div>
   )
