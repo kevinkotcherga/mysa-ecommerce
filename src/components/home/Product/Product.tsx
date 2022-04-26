@@ -9,7 +9,7 @@ const Product = () => {
       </div>
       <div className='product__description'>
         <div className='product__description-top'>
-          <span className='product__number'>3 PRODUITS |</span>
+          <span className='product__scents'>3 PRODUITS |</span>
           <span className='product__containing'>15 ML</span>
         </div>
         <span className='product__name'>Cucicle Oil</span>
