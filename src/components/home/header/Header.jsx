@@ -21,7 +21,7 @@ const Header = () => {
         <ul>
           <li>CONNEXION</li>
           <li>INSCRIPTION</li>
-          <li><FiShoppingCart/></li>
+          <li className='header__logo-shop'><FiShoppingCart/></li>
         </ul>
       </div>
     </div>
