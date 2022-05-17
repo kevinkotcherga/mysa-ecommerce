@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Product from '../Product/Product.tsx';
+import Product from '../Product/Product.jsx';
 import './products.scss';
 import ScrollContainer from 'react-indiana-drag-scroll';
 import axios from 'axios';
